@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#red{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<label for="colors">Choose a Color:</label>
+
+<select id="colors">
+  <option value="red" id="red">red</option>
+  <option value="black" id="black">black</option>
+  <option value="grey" id="grey" >grey</option>
+  <option value="cyan" id="cyan">cyan</option>
+</select>
+</body>
+<script>
+	var c1 = document.getElementById('red');
+	var c2 = document.getElementById('black');
+	var c3 = document.getElementById('grey');
+	var c4 = document.getElementById('cyan');
+	c1.addEventListener('click',function(){
+		document.style.backgroundColor="red";
+
+	c2.addEventListener('click',function(){
+		document.style.backgroundColor = "black";
+	});
+	
+
+	</script>
+</html>
